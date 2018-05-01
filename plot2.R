@@ -15,8 +15,8 @@ DT_feb2017 <- dataset[(DateTime >= "2007-02-01") & (DateTime < "2007-02-03")]
 png("plot2.png", width=480, height=480)
 
 ## Plot 2
-plot(x = DT_feb2017[, DateTime],
-     y = DT_feb2017[, Global_active_power],
+plot(DT_feb2017[, DateTime],
+     DT_feb2017[, Global_active_power],
      type ="l" ,xlab="", ylab="Global Active Power (kilowatts)")
 dev.off()
 

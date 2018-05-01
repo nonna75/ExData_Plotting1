@@ -13,7 +13,7 @@ DT_feb2017 <- dataset[(Date >= "2007-02-01") & (Date <= "2007-02-02"),]
 png("plot1.png", width=480, height=480)
 
 ## Plot 1
-hist(DT_feb2017[, Global_active_power], main ="Global_active_power",
+hist(DT_feb2017[, Global_active_power], main ="Global active power",
      xlab = "Global Active Power (kilowatts)", ylab="Frequency", col="Red")
 dev.off()
 

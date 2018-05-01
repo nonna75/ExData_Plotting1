@@ -20,8 +20,8 @@ plot(x = DT_feb2017[, DateTime],
      type ="l" ,xlab="", ylab="Global Active Power")
 
 ## Plot 2
-plot(x = DT_feb2017[, DateTime],
-     y = DT_feb2017[, Voltage],
+plot(DT_feb2017[, DateTime],
+     DT_feb2017[, Voltage],
      type ="l" ,xlab="datetime", ylab="Voltage")
 ## Plot 3
 plot(DT_feb2017[,DateTime],DT_feb2017[,Sub_metering_1],type="l",xlab="", ylab="Energy sub metering")
@@ -32,9 +32,9 @@ legend("topright",
        c("Sub_metering_1  ","Sub_metering_2  ", "Sub_metering_3  "),
        lty=c(1,1), lwd=c(1,1))
 ## Plot 4
-plot(x = DT_feb2017[, DateTime],
-     y = DT_feb2017[, Global_active_power],
-     type ="l" ,xlab="datetime", ylab="Global_active_power")
+plot(DT_feb2017[, DateTime],
+     DT_feb2017[, Global_reactive_power],
+     type ="l" ,xlab="datetime", ylab="Global_reactive_power")
 
 dev.off()
 
